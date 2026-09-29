@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-29",
+  "open5gs_tag": "v2.7.6",
+  "open5gs_commit": "d9d3abdd480be96fac3bc8a997e83446648763ca",
+  "docker_image_id": "sha256:ba73cacf68b868c0f08aa840805a4d49afed88a28a290f04379bc08a88103c12",
+  "scenario": "falsified-report",
+  "preflight_nrf_status": 200,
+  "preflight_scp_status": 200,
+  "completed_windows": 72,
+  "distinct_nf": 3,
+  "attack_windows": 12,
+  "attack_windows_with_lower_reported_count": 12,
+  "complete_observation_windows": 72,
+  "failed_kie_windows": 0,
+  "observed_requests_including_kie": 576,
+  "heartbeats": 69,
+  "deregistrations": 3,
+  "linux_container_pytest": "7 passed",
+  "interpretation": "Real Open5GS NRF/SCP with three controlled Python AF instances; native AMF/SMF compromise was not tested."
+}

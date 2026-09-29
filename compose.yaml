@@ -1,0 +1,13 @@
+services:
+  core:
+    build: .
+    init: true
+    # No published ports: the entire experiment uses loopback inside this container.
+    volumes:
+      - ./runs:/lab/runs
+    healthcheck:
+      test: ["CMD", "python3", "-m", "nf_lab.cli", "preflight"]
+      interval: 10s
+      timeout: 8s
+      retries: 6
+      start_period: 15s

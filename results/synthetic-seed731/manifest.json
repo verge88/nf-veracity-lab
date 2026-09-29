@@ -1,0 +1,41 @@
+{
+  "mode": "synthetic",
+  "config": {
+    "seed": 731,
+    "runs_per_scenario": 12,
+    "windows": 48,
+    "window_seconds": 5,
+    "attack_start": 16,
+    "attack_end": 40,
+    "peers": 4,
+    "bootstrap_samples": 300,
+    "scenarios": [
+      "normal",
+      "load-spike",
+      "DoS",
+      "compromised-NF",
+      "falsified-report",
+      "low-and-slow"
+    ]
+  },
+  "python": "3.14.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "h2": "4.4.1",
+    "hypercorn": "0.18.0",
+    "PyYAML": "6.0.3"
+  },
+  "source_sha256": {
+    "cli.py": "d59cd3cb7ebd89807b55926339ad3e24ddee69e3ff231f9eeb52b9787aa99350",
+    "evaluate.py": "5b089bbd3c521e324ae7f78babb1b12ecbb3acb234f89b1556c0cd6120e638ac",
+    "features.py": "3c713d7b34c1c5adf49ac4f153f68348bf16b3f5c9aefbe6468a2d4fddc875fb",
+    "h2client.py": "e4102c7b7b5776f2a4de36b613b703eb48d80f3713e16eef6824c0436b7d84b5",
+    "io.py": "24da51b1d17c4ba4c44651df385ee5146bebaf5224b1460652ceff47789e7f23",
+    "live.py": "ca2d5ebbbab3fd2f95485544eb6f8ce668f1eeb224ebe961e1cdaa333a5c4657",
+    "pcap.py": "e85e8aa70d3760ef7c4fe87b35aaf7f3a49c4dfd51b4f0eb3dfb7c7094ce5572",
+    "simulate.py": "68a1a369495bd126d75d37b86ef07a03525ccb331ed48fdcf85bba776054dee9",
+    "__init__.py": "6b2b13ce2dbba2881ac72e7c001885b8990e29823d9c1e4809ebccc6fca29ae7"
+  }
+}

@@ -1,0 +1,15 @@
+# Linux network namespace containing Open5GS NRF and SCP.
+nrf: http://127.0.0.10:7777
+scp: http://127.0.0.200:7777
+gateway: http://127.0.0.201:8800
+producer_host: 127.0.0.1
+producer_base_port: 8801
+peers: 3
+windows: 24
+window_seconds: 5
+attack_start: 8
+attack_end: 20
+rate_per_nf: 2
+max_rate_per_nf: 20
+timeout: 2
+heartbeat_seconds: 5

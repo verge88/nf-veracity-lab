@@ -1,0 +1,179 @@
+{
+  "mode": "synthetic",
+  "rows": 13824,
+  "runs": 72,
+  "kie_application_byte_ratio": 0.007790603577702539,
+  "models": {
+    "M0": [
+      "rate",
+      "error",
+      "mix",
+      "latency"
+    ],
+    "M1": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "delta_rate",
+      "delta_mix",
+      "ewma_rate",
+      "ewma_mix"
+    ],
+    "M2": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "delta_rate",
+      "delta_mix",
+      "ewma_rate",
+      "ewma_mix",
+      "kie_latency",
+      "kie_failed"
+    ],
+    "M3": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "delta_rate",
+      "delta_mix",
+      "ewma_rate",
+      "ewma_mix",
+      "kie_latency",
+      "kie_failed",
+      "D_peer"
+    ],
+    "M4": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "delta_rate",
+      "delta_mix",
+      "ewma_rate",
+      "ewma_mix",
+      "kie_latency",
+      "kie_failed",
+      "D_peer",
+      "D_rep",
+      "report_missing"
+    ],
+    "M4-no-KIE": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "delta_rate",
+      "delta_mix",
+      "ewma_rate",
+      "ewma_mix",
+      "D_peer",
+      "D_rep",
+      "report_missing"
+    ],
+    "M4-no-peer": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "delta_rate",
+      "delta_mix",
+      "ewma_rate",
+      "ewma_mix",
+      "kie_latency",
+      "kie_failed",
+      "D_rep",
+      "report_missing"
+    ],
+    "M4-no-time": [
+      "rate",
+      "error",
+      "mix",
+      "latency",
+      "kie_latency",
+      "kie_failed",
+      "D_peer",
+      "D_rep",
+      "report_missing"
+    ],
+    "Drep-only": [
+      "D_rep",
+      "report_missing"
+    ]
+  },
+  "ablation": [
+    {
+      "target": "label_attack",
+      "comparison": "M4 - M3",
+      "delta_f1": 0.24402146294801652,
+      "ci95_low": 0.09915314262283635,
+      "ci95_high": 0.45988017471956727
+    },
+    {
+      "target": "label_attack",
+      "comparison": "M4 - M4-no-KIE",
+      "delta_f1": 0.0033420126823512364,
+      "ci95_low": -0.0023364701285981224,
+      "ci95_high": 0.010309278350515427
+    },
+    {
+      "target": "label_attack",
+      "comparison": "M4 - M4-no-peer",
+      "delta_f1": 8.115996316582219e-05,
+      "ci95_low": -0.0051697542732492665,
+      "ci95_high": 0.004411994143297212
+    },
+    {
+      "target": "label_attack",
+      "comparison": "M4 - M4-no-time",
+      "delta_f1": 0.0018072927377991155,
+      "ci95_low": -0.0031329666416844925,
+      "ci95_high": 0.008461928803055916
+    },
+    {
+      "target": "label_attack",
+      "comparison": "M4 - Drep-only",
+      "delta_f1": 0.3751305628328282,
+      "ci95_low": 0.12600699881520736,
+      "ci95_high": 0.6604557968034142
+    },
+    {
+      "target": "label_falsification",
+      "comparison": "M4 - M3",
+      "delta_f1": 0.6615362276753303,
+      "ci95_low": 0.42826802133503167,
+      "ci95_high": 0.8907788825757574
+    },
+    {
+      "target": "label_falsification",
+      "comparison": "M4 - M4-no-KIE",
+      "delta_f1": -0.010351863833175767,
+      "ci95_low": -0.038326499997126166,
+      "ci95_high": 0.004764300644115482
+    },
+    {
+      "target": "label_falsification",
+      "comparison": "M4 - M4-no-peer",
+      "delta_f1": -0.010773412404250116,
+      "ci95_low": -0.033078743720796215,
+      "ci95_high": 0.0
+    },
+    {
+      "target": "label_falsification",
+      "comparison": "M4 - M4-no-time",
+      "delta_f1": -0.017419001642362986,
+      "ci95_low": -0.045925209925209876,
+      "ci95_high": -0.00024369724609987658
+    },
+    {
+      "target": "label_falsification",
+      "comparison": "M4 - Drep-only",
+      "delta_f1": 0.004204330460374162,
+      "ci95_low": -0.06203208556149734,
+      "ci95_high": 0.04363019584302481
+    }
+  ],
+  "note": "Application payload/header estimate; excludes TCP/TLS/IP framing and report/NRF traffic."
+}

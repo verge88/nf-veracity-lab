@@ -1,0 +1,9 @@
+seed: 731
+runs_per_scenario: 12
+windows: 48
+window_seconds: 5
+attack_start: 16
+attack_end: 40
+peers: 4
+bootstrap_samples: 300
+scenarios: [normal, load-spike, DoS, compromised-NF, falsified-report, low-and-slow]

@@ -1,0 +1,10 @@
+{
+  "nrf": {
+    "status": 200,
+    "instances": 3
+  },
+  "scp": {
+    "status": 200,
+    "instances": 3
+  }
+}

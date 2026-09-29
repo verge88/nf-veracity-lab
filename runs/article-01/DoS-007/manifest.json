@@ -1,0 +1,41 @@
+{
+  "mode": "open5gs-surrogate",
+  "config": {
+    "nrf": "http://127.0.0.10:7777",
+    "scp": "http://127.0.0.200:7777",
+    "gateway": "http://127.0.0.201:8800",
+    "producer_host": "127.0.0.1",
+    "producer_base_port": 8801,
+    "peers": 3,
+    "windows": 24,
+    "window_seconds": 5,
+    "attack_start": 8,
+    "attack_end": 20,
+    "rate_per_nf": 2,
+    "max_rate_per_nf": 20,
+    "timeout": 2,
+    "heartbeat_seconds": 5,
+    "scenario": "DoS",
+    "seed": 738
+  },
+  "python": "3.12.3",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "h2": "4.4.1",
+    "hypercorn": "0.18.0",
+    "PyYAML": "6.0.3"
+  },
+  "source_sha256": {
+    "live.py": "7e61773aec4407f7b5136dc0fe189518868f5de92c98f47a79eb22e898d41565",
+    "pcap.py": "b8922e1ab97ce7d3091b3405a7e9d5428f636bb33f3fc4eb5dbc52203bb2e5bc",
+    "io.py": "24da51b1d17c4ba4c44651df385ee5146bebaf5224b1460652ceff47789e7f23",
+    "__init__.py": "6b2b13ce2dbba2881ac72e7c001885b8990e29823d9c1e4809ebccc6fca29ae7",
+    "features.py": "3c713d7b34c1c5adf49ac4f153f68348bf16b3f5c9aefbe6468a2d4fddc875fb",
+    "simulate.py": "68a1a369495bd126d75d37b86ef07a03525ccb331ed48fdcf85bba776054dee9",
+    "evaluate.py": "5b089bbd3c521e324ae7f78babb1b12ecbb3acb234f89b1556c0cd6120e638ac",
+    "cli.py": "d59cd3cb7ebd89807b55926339ad3e24ddee69e3ff231f9eeb52b9787aa99350",
+    "h2client.py": "3c51d7beef3c1b02d52cfc183e6643dd037ed93bd9d5dc89fc93e2b0cc69784a"
+  }
+}
